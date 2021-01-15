@@ -12,3 +12,85 @@ the font is called 'nunito' and can be found on google fonts
 ***you can use it if you'd like or you can choose your own***
 
 */
+
+head, body, section{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+   
+}
+
+header {
+   
+    align-items: right;
+    font-weight: bold;
+    color: rgb(42, 171, 226);
+    background-color: rgb(37, 37, 37);
+    padding: 10px;
+    margin: 20;
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+
+    display: inline-block;
+    list-style: none;
+    align-content: space-between;
+    color: rgb(255, 255, 255);
+    justify-content: right;
+    background-color: aqua;
+
+}
+
+.skillsText{
+    background-color: lightcyan;
+    height: 80vh;
+    margin: 20px;
+    padding: 40px;
+    
+}
+
+h1 {
+    color:  rgb(37, 37, 37);
+    font-weight: bold;
+ 
+}
+
+.twoBoxes {
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.profilePic, .popularAct {
+    padding: 20px;
+    height: 200px;
+    width: 200px;
+    float: right;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 10px rgb(37, 37, 37);
+
+}
+
+
+
+#gallery {
+    flex-direction: row;
+    align-items: center;
+    margin: 50px;
+    padding: 100px;
+    background-color: lightseagreen;
+  
+   
+}
+
+h2{
+color:  rgb(37, 37, 37);
+font-weight: bold;
+}
+
+.popularAct{
+    text-align: center;
+    list-style: 
+}
+
