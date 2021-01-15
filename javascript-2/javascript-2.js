@@ -34,8 +34,10 @@ let foods = [
   Calories can be calculated by multiplying carbs by 4, protein by 4, fat by 9, 
   and then adding the results together. 
 */
-
-//CODE HERE
+// foods.forEach(function(curVal){ 
+// curVal = curVal.calories = (carbs * 4) + (protein * 4) + (fat * 9)
+// //return curval  
+// })
 
 //////////////////////////////////PROBLEMS 2-4//////////////////////////////////
 /*
@@ -79,8 +81,12 @@ const products = [
   Using the map method, make a copy of your products array with the prices reduced by 25%. 
   Save the copy to a new variable called 'saleProducts'.
 */
+const saleProducts = products.map((elem)=> {
 
-//CODE HERE
+  if(elem === products.price)
+  return elem = elem * .25
+})
+
 
 ////////////////////PROBLEM 3////////////////////
 /*
@@ -90,7 +96,13 @@ const products = [
   (Hint: look up the array method 'includes' on MDN)
 */
 
-//CODE HERE
+// const blueProducts = saleProducts.filter((elem)=>{
+//   for(let key in saleProducts)
+// if(elem.includes('blue'))
+//   return elem
+
+// }
+// })
 
 ////////////////////PROBLEM 4////////////////////
 /*
@@ -129,7 +141,7 @@ const shippingInfo = {
   that combines the contactInfo and shippingInfo objects.
 */
 
-//CODE HERE
+const helensInfo = Object.assign(contactInfo, shippingInfo)
 
 ////////////////////PROBLEM 6////////////////////
 /*
@@ -138,14 +150,14 @@ const shippingInfo = {
   Overwrite the name property to 'Ellen' and the email address to 'ellen@email.com'.
 */
 
-//CODE HERE
+const ellensInfo = {...helensInfo, name: 'Ellen', email: 'ellen@email.com'}
 
 ////////////////////PROBLEM 7////////////////////
 /* 
   Save Ellen's email to a new variable using destructuring.
 */
 
-//CODE HERE
+const {email} = ellensInfo
 
 ////////////////////PROBLEM 8////////////////////
 /*
@@ -153,7 +165,7 @@ const shippingInfo = {
   from shippingInfo to new variables using destructuring.
 */
 
-//CODE HERE
+const {zipCode, state} = shippingInfo
 
 //////////////////////////////////PROBLEMS 9-11//////////////////////////////////
 /*
@@ -215,7 +227,7 @@ const userInfo = {
   using dot notation.
 */
 
-//CODE HERE
+const shouldAlert = userInfo.settings.alerts
 
 ////////////////////PROBLEM 10////////////////////
 /*
@@ -223,7 +235,7 @@ const userInfo = {
   using dot and/or bracket notation.
 */
 
-//CODE HERE
+const topic = userInfo.topics[3]
 
 ////////////////////PROBLEM 11////////////////////
 /*
@@ -231,7 +243,7 @@ const userInfo = {
   gn@rly_c0der_007's 2nd comment using dot/bracket notation.
 */
 
-//CODE HERE
+//const commenterId = userInfo.comments[responses][userId[0]]
 
 ////////////////////PROBLEM 12////////////////////
 /*
@@ -250,7 +262,25 @@ const userInfo = {
       - create at least 2 kid objects
 */
 
-//CODE HERE
+const person = {
+name: 'Brittney',
+age: 31,
+jobs: ['supervisor at Walmart.com', 'Supervisor at Jet.com', 'Supervisor at NetflixCS'],
+birthday: function(){
+  this.age = this.age +1
+},
+
+favorites: {
+  color: 'teal',
+  number: 7,
+  book: 'the power of habits',
+},
+
+kids: [{name: 'Hana', age: 5}, {name: 'Archie', age: 4}, {name: 'Mins', age: 11}],
+
+}
+
+
 
 //////////////////////////////////PROBLEMS 13-14//////////////////////////////////
 /*
@@ -276,7 +306,7 @@ const workout = {
 //let context1 = myFunc
 //let context1 = window
 //let context1 = global
-// let context1 = workout
+let context1 = workout
 
 ////////////////////PROBLEM 14////////////////////
 /*
@@ -289,6 +319,6 @@ function myFunc() {
 }
 
 //let context2 = myFunc
-// let context2 = window
+let context2 = window
 //let context2 = global
 //let context2 = workout
