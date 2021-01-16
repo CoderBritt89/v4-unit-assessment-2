@@ -134,11 +134,12 @@ return `I am a JavaScript ninja!`
     looping over the shapes object and deleting any property whose value is odd number.
 */
 
-// for(let key in shapes){
-// if (key %2 === 1){
-// return shapes.splice(key, 1)
-// }    
-// }
+for(let key in shapes){
+if (shapes[key] %2 === 1){
+delete shapes[key]
+}   
+console.log(shapes) 
+}
 
   
   
@@ -184,9 +185,9 @@ const classes = [
 // for(let i = 0; i < classes.length; i++){
 
 // for(let key in classes){
-//     if(key === true){
+//     if(classes[key] === true){
 //       return classes[key] = false  
-//     } else if (key === false){
+//     } else if (classes[key] === false){
 //         return classes[key] = true
 //     }
 // }
@@ -210,7 +211,7 @@ let pairsArray = []
 // for(let i = 0; i<lettersToPair.length; i++){
 //     for(let j = lettersToPair.length; j>0; j--){
 //        if(lettersToPair[i] === lettersToPair[j]){
-//         return pairsArray.push() 
+//         return pairsArray.push([j]) 
 //        }
 //     }
 // }
