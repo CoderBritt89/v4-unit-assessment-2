@@ -42,7 +42,7 @@ header {
     list-style: none;
     color: rgb(255, 255, 255);
     font-size: 0.5em;
-    margin-left: 350px;
+    margin-left: 600px;
     padding: 10px;
     width: 400px;
 } 
@@ -55,9 +55,8 @@ header {
 }
 
 .skillsText{
-    /*height: 100vh;*/
     margin: 20px;
-    padding: 40px;  
+    padding: 20px; 
 }
 
 h1 {
@@ -70,40 +69,64 @@ h1 {
 p {
     justify-content: space-evenly;
     align-content: space-between;
-    flex-direction: column;
-    /*height: 100vh;*/
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 14px;
+    text-align: left;
+     
 }
 
-p, h1, .imageGal{
-    margin: 20px;
+h1, .imageGal{
     padding: 20px;
+    margin: 20px;
 }
 
 .profilePic, .popularAct{
     margin: 20px;
     padding: 20px;
-    height: 200px;
-    width: 200px;
+    width: 150px;
     float: right;
     background-color: rgb(255, 255, 255);
     box-shadow: 3px 3px 10px rgb(37, 37, 37);
     flex-direction: column;
     align-content: flex-end;
+    
 }
+
+.popularAct {
+    height: 225px;
+    text-align: left;
+    font-size: 13px;
+    line-height: 1.5;
+}
+.profilePic {
+    height: 150px;
+    text-align: center;
+}
+/*
+.boxArrange{
+  
+    flex-direction: column;
+    background: lightseagreen;
+    height: 40px;
+   
+}*/
 
 .logoBox{
   
     flex-direction: row;
-    padding: 40px;
-    margin: 20px;
+    align-content: space-between;
+    margin: 0;
+    justify-content: center;
 }
 
 #gallery {
     flex-direction: column-reverse;
-    align-content: space-around;
-   /* margin: 50px;
-    padding: 20px;*/
-    align-items:center;
+    align-content: space-between;
+   align-items:center;
+   padding-left: 80px;
+   padding-right: 60px;
+  
     
   
 }
@@ -111,10 +134,6 @@ p, h1, .imageGal{
 h2{
 color:  rgb(37, 37, 37);
 font-weight: bold;
-}
-
-.popularAct{
-    text-align: center;
 }
 
 
