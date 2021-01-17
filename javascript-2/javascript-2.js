@@ -34,10 +34,13 @@ let foods = [
   Calories can be calculated by multiplying carbs by 4, protein by 4, fat by 9, 
   and then adding the results together. 
 */
-// foods.forEach(function(curVal){ 
-// curVal = curVal.calories = (carbs * 4) + (protein * 4) + (fat * 9)
-// //return curval  
-// })
+foods.forEach(function(elem){ 
+elem = foods.calories = (foods.carbs * 4) + (foods.protein * 4) + (foods.fat * 9);
+//if (elem === )foods.calories = (foods.carbs * 4) + (foods.protein * 4) + (foods.fat * 9)
+//return curval  
+})
+
+console.log(foods)
 
 //////////////////////////////////PROBLEMS 2-4//////////////////////////////////
 /*
@@ -81,12 +84,40 @@ const products = [
   Using the map method, make a copy of your products array with the prices reduced by 25%. 
   Save the copy to a new variable called 'saleProducts'.
 */
-const saleProducts = products.map((elem)=> {
+// const saleProducts = products.map((elem) =>{
 
-  if(elem === products.price)
-  return elem = elem * .25
+//   if(elem === products.price )
+//   return products.price * .25
+
+// })
+
+const saleProducts = products.map((elem) =>{
+  return elem = elem 
+  
+  //if(elem === products.price)
+  //elem = products.price *.25
+
 })
 
+
+console.log(saleProducts)
+
+
+/*
+
+Const newArray = arr.map((element, index, array) => { return ‘test’ 
+}
+
+
+
+const happyBirthday =(arr) =>{
+let newAges = arr.map(age => age += 1)
+ return newAges
+ 
+}
+
+
+*/
 
 ////////////////////PROBLEM 3////////////////////
 /*
@@ -96,13 +127,9 @@ const saleProducts = products.map((elem)=> {
   (Hint: look up the array method 'includes' on MDN)
 */
 
-// const blueProducts = saleProducts.filter((elem)=>{
-//   for(let key in saleProducts)
-// if(elem.includes('blue'))
-//   return elem
-
-// }
-// })
+const blueProducts = saleProducts.filter((elem => elem === saleProducts.includes('blue')))
+ 
+console.log(blueProducts)
 
 ////////////////////PROBLEM 4////////////////////
 /*
@@ -111,7 +138,30 @@ const saleProducts = products.map((elem)=> {
   Save the result to a variable called orderTotal.
 */
 
-//CODE HERE
+const orderTotal = blueProducts.reduce((acc, curr)=>{
+return acc + curr
+
+
+}, 0
+)
+console.log(orderTotal)
+
+/*
+Const totalTheNumber = (arr) => {
+  Return arr.reduce((acc, cur, index, array) =>{
+  Return acc + cur
+}, 0
+)}
+
+bobsTotal = purchases.filter((elem, index, array)=> elem.owner === 'Bob')
+.map((elem, index, array)=> elem.price)
+.reduce((acc, elem, index, array)=> acc + elem, 0)
+ 
+console.log(bobsTotal)
+
+
+*/
+
 
 //////////////////////////////////PROBLEMS 5-8//////////////////////////////////
 /*
