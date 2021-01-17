@@ -17,71 +17,95 @@ head, body, section{
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
+    font-family:Arial, Helvetica, sans-serif;
    
 }
 
-header {
-   
-    align-items: right;
-    font-weight: bold;
-    color: rgb(42, 171, 226);
-    background-color: rgb(37, 37, 37);
+header, footer {
+   font-weight: bold;
     padding: 10px;
     margin: 20;
-    position: fixed;
     width: 100%;
 }
 
-nav {
+header {
+    color: rgb(42, 171, 226);
+    background-color: rgb(37, 37, 37);
+    position: fixed;
+    font-size: 1.5em;
+    flex-direction: row;
+    align-content: space-around;
+}
 
+#navMenu {
     display: inline-block;
     list-style: none;
-    align-content: space-between;
     color: rgb(255, 255, 255);
-    justify-content: right;
+    font-size: 0.5em;
+    margin-left: 350px;
+    padding: 10px;
+    width: 400px;
+} 
 
-
+.menu {
+    display: inline-block;
+    padding:    20px;
+    font-size: 1.0em;
+    font-weight: lighter;
 }
 
 .skillsText{
-   
-    height: 80vh;
+    /*height: 100vh;*/
     margin: 20px;
-    padding: 40px;
-    
+    padding: 40px;  
 }
 
 h1 {
     color:  rgb(37, 37, 37);
     font-weight: bold;
+    font-size: 1.5em;
  
 }
 
-.twoBoxes {
+p {
     justify-content: space-evenly;
+    align-content: space-between;
     flex-direction: column;
+    /*height: 100vh;*/
 }
 
-.profilePic, .popularAct {
+p, h1, .imageGal{
+    margin: 20px;
+    padding: 20px;
+}
+
+.profilePic, .popularAct{
+    margin: 20px;
     padding: 20px;
     height: 200px;
     width: 200px;
     float: right;
     background-color: rgb(255, 255, 255);
     box-shadow: 3px 3px 10px rgb(37, 37, 37);
-
+    flex-direction: column;
+    align-content: flex-end;
 }
 
-
+.logoBox{
+  
+    flex-direction: row;
+    padding: 40px;
+    margin: 20px;
+}
 
 #gallery {
-    flex-direction: row;
-    align-items: center;
-    margin: 50px;
-    padding: 100px;
-    background-color:  rgb(255, 255, 255);
+    flex-direction: column-reverse;
+    align-content: space-around;
+   /* margin: 50px;
+    padding: 20px;*/
+    align-items:center;
+    
   
-   
 }
 
 h2{
@@ -91,6 +115,12 @@ font-weight: bold;
 
 .popularAct{
     text-align: center;
-    list-style: 
+}
+
+
+footer {
+background-color: rgb(42, 171, 226);
+color: rgb(37, 37, 37);
+font-size: 1.0em;
 }
 
