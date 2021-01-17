@@ -138,7 +138,7 @@ for(let key in shapes){
 if (shapes[key] %2 === 1){
 delete shapes[key]
 }   
-console.log(shapes) 
+//console.log(shapes) 
 }
 
   
@@ -182,17 +182,19 @@ const classes = [
     all online classes with no homework.
 */
 
-// for(let i = 0; i < classes.length; i++){
+for(let i = 0; i < classes.length; i++){
 
-// for(let key in classes){
-//     if(classes[key] === true){
-//       return classes[key] = false  
-//     } else if (classes[key] === false){
-//         return classes[key] = true
-//     }
-// }
+for(let key in classes){
+console.log(classes[key]);
 
-// }
+    if(classes[i] === true){
+      classes[i] = false  
+    } else if (classes[i] === false){
+     classes[i] = true
+    }
+}
+
+}
 
   
 ////////////////////PROBLEM 10////////////////////
