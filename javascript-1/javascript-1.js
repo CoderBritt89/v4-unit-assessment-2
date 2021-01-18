@@ -59,6 +59,7 @@ animalsCopy.push('elephant')
 */
 
 
+
 const compareNums =(one, two)=>{
     if(one > two){
         return one
@@ -68,6 +69,7 @@ const compareNums =(one, two)=>{
         return one
     }
 }
+//console.log(compareNums)
 
   
 ////////////////////PROBLEM 5////////////////////
@@ -185,7 +187,6 @@ const classes = [
 for(let i = 0; i < classes.length; i++){
 
 for(let key in classes){
-console.log(classes[key]);
 
     if(classes[i] === true){
       classes[i] = false  
@@ -210,13 +211,17 @@ const lettersToPair = ['e', 'k', 's', 'a', 'e', 's', 'a', 'n', 'k', 'n']
 let pairsArray = []
 //DO NOT EDIT CODE ABOVE
 
-// for(let i = 0; i<lettersToPair.length; i++){
-//     for(let j = lettersToPair.length; j>0; j--){
-//        if(lettersToPair[i] === lettersToPair[j]){
-//         return pairsArray.push([j]) 
-//        }
-//     }
-// }
+
+for(let i = 0; i<lettersToPair.length; i++){
+    for(let j = lettersToPair.length; j>=0; j--){
+       if(lettersToPair[i] === lettersToPair[j]){
+       pairsArray.push([lettersToPair.indexOf(i), lettersToPair.indexOf(j)])
+       
+       }
+    }
+}
+
+
 
     
 
@@ -259,8 +264,7 @@ const fido = new Dog('Fido', 3, 'Jack Russell', ['sit', 'shake'])
 */
 
 function bark(name){
-return `${name} says bark!`
-
+return `${this.name} says bark!`
 }
 
 
@@ -270,7 +274,7 @@ return `${name} says bark!`
 */
 
 const fidoSpeak = bark.call(fido)
-  
+//console.log(fidoSpeak)
   
 ////////////////////PROBLEM 13////////////////////
 /*
@@ -285,12 +289,16 @@ this.trick = trick;
 teachTrick.Dog.push(this.tricks)
 }
 
+
+
 /*
     Invoke the bind method on teachTrick, passing in fido as the context and the string 'stay' as a trick.
     Save the result to a variable called 'teachStay'.
 */
 
-const teachStay = teachTrick.bind(fido, 'stay')
+const teachStay = teachTrick.bind(fido, 'stay');
+
+console.log(teachStay)
   
   
 ////////////////////PROBLEM 14////////////////////
