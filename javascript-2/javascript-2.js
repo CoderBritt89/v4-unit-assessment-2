@@ -269,12 +269,15 @@ const userInfo = {
     },
   ],
 }
+
+
+
 //DO EDIT CODE ABOVE
 
 ////////////////////PROBLEM 9////////////////////
 /* 
   Set the value of shouldAlert to the value of alerts in gn@rly_c0der_007's settings
-  using dot notation.
+  using dot notation
 */
 
 const shouldAlert = userInfo.settings.alerts
@@ -293,7 +296,8 @@ const topic = userInfo.topics[3]
   gn@rly_c0der_007's 2nd comment using dot/bracket notation.
 */
 
-//const commenterId = userInfo.comments[responses][userId[0]]
+const commenterId = userInfo.comments[1].responses[0]
+console.log(commenterId)
 
 ////////////////////PROBLEM 12////////////////////
 /*
